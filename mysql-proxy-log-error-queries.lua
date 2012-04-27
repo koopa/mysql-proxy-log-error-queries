@@ -22,7 +22,7 @@ end
 function insert_query(err_t, err_n, err_m)
   local query = "INSERT INTO `somedb`.`mysql_error` " ..
     "(`date`, `err_num`,`err_type`, `err_message`, `problem_query`, `conn_id`)" ..
-    "VALUES( NOW(), " ..
+    " VALUES ( NOW(), " ..
     err_n  ..  "," .. "\"" ..
     err_t .."\"" .. "," .. "\"" ..
     err_m .. "\"" .. "," ..

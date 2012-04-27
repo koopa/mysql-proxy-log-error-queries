@@ -43,14 +43,11 @@ Usage:
 
 By default, mysql-proxy listens on :4040.
 
-**NB: The hostname will always be localhost!**
+**NB: By default the hostname in the script will always be set to 'localhost' since you are connecting over the proxy and the proxy connects locally!**
 
-To connection from the shell to test, use:
+To start a connection from the shell to test, use:
 
     mysql -u username -p --host=127.0.0.1 --port=4040
 
 When using a remote proxy, simply replace `127.0.0.1` with the correct remote address.
-
-
-
 
